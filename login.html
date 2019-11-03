@@ -23,37 +23,11 @@
 
   <div class="container">
     <div class="card card-login mx-auto mt-5">
-      <div class="card-header">Login</div>
+      <div class="card-header">Select User</div>
       <div class="card-body">
-          <button onclick="userLogin()" class="btn btn-primary btn-block">Login</button>
-            <div id="userDropdown" class="dropdown-content">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            </div>
-          
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function userLogin() {
-  document.getElementById("userDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-          
+          <a class="btn btn-primary btn-block" href="./user/nielsleemans/index.html">Niels Leemans</a>
+          <a class="btn btn-primary btn-block" href="./user/jesseveenstra/index.html">Jesse Veenstra</a>
+          <a class="btn btn-primary btn-block" href="./user/nandabeverloo/index.html">Nanda Beverloo</a>
         <div class="text-center">
           <a class="d-block small mt-3" href="register.html">Register an Account</a>
           <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
